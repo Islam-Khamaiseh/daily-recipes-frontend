@@ -67,6 +67,7 @@
   border-radius: 50%;
   border: 2px solid #ddd;
   margin-right: 7px;
+  cursor: pointer;
 }
 
 .comments-content-avatar:hover {
