@@ -14,7 +14,7 @@ const UserProfile = () => {
   const fetchUserProfile = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/getUserProfile/${userId}`
+        `${process.env.REACT_APP_BACKEND_URL}/api/getUserProfile/${userId}`
       );
       setUserInfo(response.data);
     } catch (error) {
