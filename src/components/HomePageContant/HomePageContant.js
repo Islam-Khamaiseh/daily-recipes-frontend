@@ -27,7 +27,7 @@ function HomePageContant() {
   const fetchRecentRecipes = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/recentRecipes"
+        "https://daily-recipes-backend.onrender.com/api/recentRecipes"
       );
 
       setRecentRecipes(response.data.recentRecipes);
