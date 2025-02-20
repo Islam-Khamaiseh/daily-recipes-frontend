@@ -1,0 +1,29 @@
+.ratings {
+  text-align: center;
+}
+
+.ratings-star {
+  color: gold;
+  font-size: 1.3rem;
+}
+
+.ratings-5stars {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.ratings-5stars-span {
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.delete-btn {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: 1px solid #ff342d;
+  border-radius: 25px;
+  background-color: #fff;
+  color: #ff342d;
+  cursor: pointer;
+}

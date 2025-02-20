@@ -1,0 +1,126 @@
+.home-page-contant {
+  max-width: 100% !important;
+  margin: 0px 0px 150px 0px !important;
+  padding: 0px !important;
+}
+
+.home-page-contant-row1 {
+  background-image: url("../../assets/images/image1.svg");
+  margin: 70px 0px !important;
+  padding: 0px 0px 200px 0px !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+
+  h1 {
+    text-align: center;
+    padding: 4rem;
+    color: #fff;
+  }
+
+  .home-page-contant-row1-flex {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    text-align: center;
+
+    div {
+      width: 20%;
+      background-color: #fff;
+      padding: 20px 20px;
+      border-radius: 30px;
+
+      h2 {
+        padding-bottom: 20px;
+      }
+      p {
+        color: #6b7280;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+.home-page-contant-row3 {
+  margin: 50px 0px !important;
+  padding: 0px !important;
+
+  .home-page-contant-row3-img {
+    img {
+      width: 60%;
+      max-width: 100%;
+      height: auto;
+      margin-left: 150px;
+    }
+  }
+
+  .home-page-contant-row3-text {
+    align-content: center;
+    /* background-color: bisque; */
+    h1 {
+      width: 70%;
+    }
+    p {
+      width: 80%;
+      color: #6b7280;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.home-page-contant-row2 {
+  margin: 50px 0px !important;
+  padding: 0px !important;
+  .home-page-contant-row2-text {
+    align-content: center;
+    padding-left: 250px;
+    p {
+      width: 80%;
+      color: #6b7280;
+      font-size: 1.2rem;
+    }
+    .home-page-contant-row2-text-features {
+      margin-left: 140px;
+      font-weight: bold;
+    }
+    img {
+      width: 60px;
+      height: auto;
+    }
+    .home-page-contant-row2-text-features {
+      color: #28a745;
+    }
+  }
+
+  img {
+    width: 60%;
+    max-width: 100%;
+    height: auto;
+    margin-left: 150px;
+  }
+}
+
+.top-ratings-recipes {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-self: center;
+
+  align-content: center;
+  align-items: center;
+
+  margin: 100px 0px 0px 0px;
+
+  p {
+    color: #6b7280;
+  }
+
+  .top-ratings-recipes-cards {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+}

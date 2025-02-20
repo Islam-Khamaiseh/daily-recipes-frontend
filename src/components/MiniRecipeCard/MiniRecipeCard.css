@@ -1,0 +1,108 @@
+.recipe-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 270px;
+  font-family: Arial, sans-serif;
+  margin: 20px 10px 0px 10px;
+  height: 270px;
+}
+
+.recipe-card__image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.recipe-card__content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.recipe-card__title {
+  font-size: 1.1em;
+  margin: 0;
+  color: #333;
+  cursor: pointer;
+  width: 80%;
+  color: #18181b;
+  font-weight: 550;
+}
+
+.recipe-card__title:hover {
+  text-decoration: underline;
+}
+
+.recipe-card__date {
+  color: #6b7280;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.recipe-card__rating {
+  margin-top: 8px;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #f39c12;
+}
+
+.recipe-card__bookmark {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.bookmark-icon {
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.recipe-card__save-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.recipe-card__owner {
+  cursor: pointer;
+  color: #51ba85;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.recipe-card__owner:hover {
+  text-decoration: underline;
+}
+
+.recipe-card__content-line1,
+.recipe-card__content-line2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: start;
+}

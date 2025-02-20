@@ -1,0 +1,74 @@
+.profile-container {
+  width: 100%;
+  margin: 50px auto;
+  text-align: start;
+  font-family: Arial, sans-serif;
+}
+
+.profile-photo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.user-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 50px;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.upload-button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #51ba85;
+  color: #fff;
+}
+
+.upload-button:hover {
+  background-color: #218838;
+}
+
+.profile-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+  width: 400px;
+}
+
+.profile-inputs label {
+  color: #7a7a7a;
+}
+
+.profile-inputs input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.save-profile-button {
+  background-color: #51ba85;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.save-profile-button:hover {
+  background-color: #218838;
+}
