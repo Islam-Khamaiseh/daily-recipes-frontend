@@ -84,7 +84,7 @@ function LoginSignupForm() {
         `${process.env.REACT_APP_BACKEND_URL}/api/saveUser`,
         {
           uid: user.uid,
-          name: user.email.split("@")[0],
+          userName: user.email.split("@")[0],
           email: user.email,
         },
         {
