@@ -185,7 +185,7 @@ const Recipe = () => {
               <img
                 src={
                   recipe.imageURL ||
-                  "https://res.cloudinary.com/diwtb2b9i/image/upload/v1737013675/dhc43dnbxvivsgybl9bs.jpg"
+                  "https://res.cloudinary.com/diwtb2b9i/image/upload/v1737020097/recipes/k9dr9vrkghldfmmruws9.jpg"
                 }
                 alt="Recipe"
               />
