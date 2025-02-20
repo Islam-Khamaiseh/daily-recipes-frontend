@@ -56,7 +56,7 @@
     border-radius: 20px 20px 0px 0px;
     width: 100%;
     height: 306px;
-
+    margin-bottom: 25px;
     overflow: hidden;
 
     img {
@@ -73,7 +73,7 @@
     border: none;
     border-radius: 20px;
 
-    margin: 20px 0px;
+    /* margin: 20px 0px; */
   }
 
   .recipe-page-recipe-left-card-title {
@@ -83,6 +83,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 115%;
+    margin-top: 25px;
   }
 
   .recipe-page-recipe-left-card-line {
