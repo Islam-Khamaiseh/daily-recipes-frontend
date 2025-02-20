@@ -58,7 +58,7 @@ function Account() {
             <img
               src={
                 userInfo.avatar ||
-                "https://res.cloudinary.com/diwtb2b9i/image/upload/v1737088355/default-avatar-icon-of-social-media-user-vector_umub9i.jpg"
+                "https://res.cloudinary.com/diwtb2b9i/image/upload/v1740048991/istockphoto-1223671392-612x612_ltici0.jpg"
               }
               alt="user-image"
               className="user_image"

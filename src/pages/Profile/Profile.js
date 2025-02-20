@@ -89,7 +89,10 @@ const Profile = () => {
       <h3>Photo Profile</h3>
       <div className="profile-photo">
         <img
-          src={userInfo?.avatar || "https://via.placeholder.com/150"}
+          src={
+            userInfo.avatar ||
+            "https://res.cloudinary.com/diwtb2b9i/image/upload/v1740048991/istockphoto-1223671392-612x612_ltici0.jpg"
+          }
           alt="Avatar"
           className="user-image"
         />
