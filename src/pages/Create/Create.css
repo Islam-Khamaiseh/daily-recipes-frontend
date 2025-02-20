@@ -1,3 +1,42 @@
-.how-it-work {
-  height: 400px;
+.how-it-works {
+  min-height: 100px;
+  border-radius: 20px;
+  border: 0.98px solid #51ba85;
+  background: rgba(81, 186, 133, 0.1);
+  width: 60%;
+  justify-self: center;
+  align-self: center;
+  margin: 70px 0px;
+  padding: 30px 30px;
+}
+
+.how-it-works-h1 {
+  color: #18181b;
+  text-align: center;
+  /* font-family: Poppins; */
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%;
+}
+
+.how-it-works-h2 {
+  color: #18181b;
+  /* font-family: Poppins; */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  /* line-height: 40px; */
+  margin-top: 25px;
+}
+
+.how-it-works-p {
+  color: #18181b;
+  /* font-family: Poppins; */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  /* margin-left: 30px; */
+  margin: 0px 40px 0px 40px;
+  /* line-height: 40px; */
 }

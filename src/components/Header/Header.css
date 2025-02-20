@@ -98,13 +98,13 @@ header {
     position: absolute;
     top: calc(100% + 5px);
     right: 0;
-    background: #f6f6f6;
-    /* background: #fff; */
+    /* background: #f6f6f6; */
+    background: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 10px;
     width: 170px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
     z-index: 1000;
     max-height: 320px;
     overflow-y: auto;
@@ -113,8 +113,8 @@ header {
       padding: 3px 10px;
       border: none;
       border-bottom: 1px solid #ddd;
-      /* background: #f6f6f6; */
-      background: #fff;
+      background: #f6f6f6;
+      /* background: #fff; */
       margin: 5px 0;
       width: 100%;
       text-align: left;
