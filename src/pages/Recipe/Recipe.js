@@ -11,6 +11,7 @@ import "./Recipe.css";
 
 const Recipe = () => {
   const { id } = useParams();
+  const [userId, setUserId] = useState(null);
   const [recipe, setRecipe] = useState(null);
   const [isSaved, setIsSaved] = useState(false);
   const [newImage, setNewImage] = useState(null);
@@ -159,6 +160,18 @@ const Recipe = () => {
   // };
 
   useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      if (user) {
+        setUserId(user.uid);
+      } else {
+        setUserId(null);
+      }
+    });
+
+    return () => unsubscribe();
+  }, []);
+
+  useEffect(() => {
     fetchTopRecipesByRatings();
   }, []);
 
@@ -201,12 +214,14 @@ const Recipe = () => {
               />
             </div>
 
-            <button
-              className="recipe-page-recipe-left-card-button"
-              onClick={triggerFileInput}
-            >
-              Upload Image
-            </button>
+            {userId && recipe.owner === userId && (
+              <button
+                className="recipe-page-recipe-left-card-button"
+                onClick={triggerFileInput}
+              >
+                Upload Image
+              </button>
+            )}
 
             <h3 className="recipe-page-recipe-left-card-title">
               {recipe.title_en}
