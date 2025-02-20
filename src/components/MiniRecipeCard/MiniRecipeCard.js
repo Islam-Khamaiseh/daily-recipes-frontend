@@ -15,9 +15,12 @@ function MiniRecipeCard({ recipeId }) {
   const getRecipe = async (recipeId) => {
     try {
       const params = { recipeId };
-      const response = await axios.get("http://localhost:5000/api/getRecipe", {
-        params,
-      });
+      const response = await axios.get(
+        `${process.env.REACT_APP_BACKEND_URL}/api/getRecipe`,
+        {
+          params,
+        }
+      );
 
       const recipes3 = await response.data;
       setRecipeList(recipes3);
