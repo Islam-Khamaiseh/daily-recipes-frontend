@@ -11,7 +11,6 @@ function HomePageContant() {
   const [recentRecipes, setRecentRecipes] = useState([]);
 
   const fetchTopRecipesByRatings = async () => {
-    console.log("Backend URL:", process.env.REACT_APP_BACKEND_URL);
     try {
       const response = await axios.get(
         `${process.env.REACT_APP_BACKEND_URL}/api/topRecipes`
