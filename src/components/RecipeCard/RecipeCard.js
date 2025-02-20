@@ -20,9 +20,12 @@ function RecipeCard({ recipe }) {
   const getRecipe = async (recipeId) => {
     try {
       const params = { recipeId };
-      const response = await axios.get("http://localhost:5000/api/getRecipe", {
-        params,
-      });
+      const response = await axios.get(
+        `${process.env.REACT_APP_BACKEND_URL}/api/getRecipe`,
+        {
+          params,
+        }
+      );
 
       const recipes3 = await response.data;
       setrecipeList(recipes3);
@@ -37,7 +40,7 @@ function RecipeCard({ recipe }) {
       const token = await auth.currentUser.getIdToken();
 
       const response = await axios.post(
-        "http://localhost:5000/api/saveRecipeToHistory",
+        `${process.env.REACT_APP_BACKEND_URL}/api/saveRecipeToHistory`,
         { recipeId },
         {
           headers: {
@@ -58,7 +61,7 @@ function RecipeCard({ recipe }) {
       const token = await auth.currentUser.getIdToken();
 
       const response = await axios.post(
-        "http://localhost:5000/api/toggleSaveRecipe",
+        `${process.env.REACT_APP_BACKEND_URL}/api/toggleSaveRecipe`,
         { recipeId },
         {
           headers: {

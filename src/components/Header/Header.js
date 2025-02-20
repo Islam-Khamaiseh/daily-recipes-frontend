@@ -30,11 +30,14 @@ const Header = () => {
         return;
       }
       const token = await auth.currentUser.getIdToken();
-      const response = await axios.get("http://localhost:5000/api/userInfo", {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
+      const response = await axios.get(
+        `${process.env.REACT_APP_BACKEND_URL}/api/userInfo`,
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
       setUserInfo(response.data);
     } catch (error) {
       console.error("Error fetching user info:", error.message);

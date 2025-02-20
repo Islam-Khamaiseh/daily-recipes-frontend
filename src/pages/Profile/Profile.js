@@ -12,9 +12,12 @@ const Profile = () => {
   const getUserInfo = async () => {
     try {
       const token = await auth.currentUser.getIdToken();
-      const response = await axios.get("http://localhost:5000/api/userInfo", {
-        headers: { Authorization: `Bearer ${token}` },
-      });
+      const response = await axios.get(
+        `${process.env.REACT_APP_BACKEND_URL}/api/userInfo`,
+        {
+          headers: { Authorization: `Bearer ${token}` },
+        }
+      );
       setUserInfo(response.data);
       setNewUserName(response.data.userName);
     } catch (error) {
@@ -39,7 +42,7 @@ const Profile = () => {
       formData.append("oldAvatarUrl", userInfo.avatar || "");
 
       const response = await axios.post(
-        "http://localhost:5000/api/updateAvatar",
+        `${process.env.REACT_APP_BACKEND_URL}/api/updateAvatar`,
         formData,
         {
           headers: { Authorization: `Bearer ${token}` },
@@ -61,7 +64,7 @@ const Profile = () => {
     try {
       const token = await auth.currentUser.getIdToken();
       const response = await axios.post(
-        "http://localhost:5000/api/updateUserName",
+        `${process.env.REACT_APP_BACKEND_URL}/api/updateUserName`,
         { newUserName },
         {
           headers: { Authorization: `Bearer ${token}` },

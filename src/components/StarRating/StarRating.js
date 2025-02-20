@@ -18,7 +18,7 @@ const StarRating = ({ recipeId }) => {
       }
 
       const response = await axios.get(
-        `http://localhost:5000/api/getRecipeRatings?recipeId=${recipeId}`,
+        `${process.env.REACT_APP_BACKEND_URL}/api/getRecipeRatings?recipeId=${recipeId}`,
         {
           headers: token ? { Authorization: `Bearer ${token}` } : undefined,
         }
@@ -37,7 +37,7 @@ const StarRating = ({ recipeId }) => {
       const token = await auth.currentUser.getIdToken();
 
       await axios.post(
-        "http://localhost:5000/api/rateRecipe",
+        `${process.env.REACT_APP_BACKEND_URL}/api/rateRecipe`,
         { recipeId, rating },
         {
           headers: {
@@ -57,10 +57,13 @@ const StarRating = ({ recipeId }) => {
     try {
       const token = await auth.currentUser.getIdToken();
 
-      await axios.delete("http://localhost:5000/api/deleteRating", {
-        headers: { Authorization: `Bearer ${token}` },
-        data: { recipeId },
-      });
+      await axios.delete(
+        `${process.env.REACT_APP_BACKEND_URL}/api/deleteRating`,
+        {
+          headers: { Authorization: `Bearer ${token}` },
+          data: { recipeId },
+        }
+      );
 
       setUserRating(null);
       setTimeout(fetchRatings, 1000);

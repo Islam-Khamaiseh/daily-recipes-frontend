@@ -20,9 +20,12 @@ const Recipe = () => {
 
   const getRecipe = async (recipeId) => {
     try {
-      const response = await axios.get("http://localhost:5000/api/getRecipe", {
-        params: { recipeId },
-      });
+      const response = await axios.get(
+        `${process.env.REACT_APP_BACKEND_URL}/api/getRecipe`,
+        {
+          params: { recipeId },
+        }
+      );
       setRecipe(response.data);
     } catch (error) {
       console.error("Error fetching recipe:", error.message);
@@ -34,7 +37,7 @@ const Recipe = () => {
       const token = await auth.currentUser.getIdToken();
 
       const response = await axios.post(
-        "http://localhost:5000/api/toggleSaveRecipe",
+        `${process.env.REACT_APP_BACKEND_URL}/api/toggleSaveRecipe`,
         { recipeId },
         {
           headers: {
@@ -72,7 +75,7 @@ const Recipe = () => {
       formData.append("oldImageUrl", recipe?.imageURL);
 
       const response = await fetch(
-        "http://localhost:5000/api/updateRecipeImage",
+        `${process.env.REACT_APP_BACKEND_URL}/api/updateRecipeImage`,
         {
           method: "POST",
           body: formData,
@@ -97,7 +100,9 @@ const Recipe = () => {
 
   const fetchTopRecipesByRatings = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/topRecipes");
+      const response = await axios.get(
+        `${process.env.REACT_APP_BACKEND_URL}/api/topRecipes`
+      );
 
       setTopRecipes(response.data.topRecipes);
 
@@ -133,7 +138,7 @@ const Recipe = () => {
   //     const token = await auth.currentUser.getIdToken();
 
   //     const response = await axios.get(
-  //       "http://localhost:5000/api/checkIfSaved",
+  //       `${process.env.REACT_APP_BACKEND_URL}/api/checkIfSaved`,
   //       {
   //         params: { recipeId },
   //         headers: {

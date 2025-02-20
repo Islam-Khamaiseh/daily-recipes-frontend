@@ -13,7 +13,7 @@ const Comments = ({ recipeId }) => {
   const fetchComments = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/getComments?recipeId=${recipeId}`
+        `${process.env.REACT_APP_BACKEND_URL}/api/getComments?recipeId=${recipeId}`
       );
 
       setComments(response.data.comments);
@@ -31,7 +31,7 @@ const Comments = ({ recipeId }) => {
     try {
       const token = await auth.currentUser.getIdToken();
       await axios.post(
-        "http://localhost:5000/api/addComment",
+        `${process.env.REACT_APP_BACKEND_URL}/api/addComment`,
         { recipeId, content },
         {
           headers: { Authorization: `Bearer ${token}` },

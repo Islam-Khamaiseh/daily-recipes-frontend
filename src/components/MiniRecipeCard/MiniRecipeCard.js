@@ -35,7 +35,7 @@ function MiniRecipeCard({ recipeId }) {
       const token = await auth.currentUser.getIdToken();
 
       const response = await axios.post(
-        "http://localhost:5000/api/toggleSaveRecipe",
+        `${process.env.REACT_APP_BACKEND_URL}/api/toggleSaveRecipe`,
         { recipeId },
         {
           headers: {
@@ -65,7 +65,7 @@ function MiniRecipeCard({ recipeId }) {
   //     const token = await auth.currentUser.getIdToken();
 
   //     const response = await axios.get(
-  //       "http://localhost:5000/api/checkIfSaved",
+  //       `${process.env.REACT_APP_BACKEND_URL}/api/checkIfSaved`,
   //       {
   //         params: { recipeId },
   //         headers: {

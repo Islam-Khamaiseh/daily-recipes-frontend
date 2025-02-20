@@ -44,7 +44,7 @@ function LoginSignupForm() {
         const idToken = await user.getIdToken();
 
         await axios.post(
-          "http://localhost:5000/api/saveUser",
+          `${process.env.REACT_APP_BACKEND_URL}/api/saveUser`,
           {
             uid: user.uid,
             userName: username,
@@ -81,7 +81,7 @@ function LoginSignupForm() {
       const idToken = await user.getIdToken();
 
       await axios.post(
-        "http://localhost:5000/api/saveUser",
+        `${process.env.REACT_APP_BACKEND_URL}/api/saveUser`,
         {
           uid: user.uid,
           name: user.displayName,

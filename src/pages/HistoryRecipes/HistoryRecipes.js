@@ -14,7 +14,7 @@ const HistoryRecipes = () => {
       const params = { userId };
 
       const response = await axios.get(
-        "http://localhost:5000/api/getRecipesInHistory",
+        `${process.env.REACT_APP_BACKEND_URL}/api/getRecipesInHistory`,
         {
           params,
         }
