@@ -86,7 +86,6 @@ header {
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid #ddd;
-    transition: 0.3s ease-in-out;
     margin-right: 7px;
   }
 

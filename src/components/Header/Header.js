@@ -63,7 +63,7 @@ const Header = () => {
 
   useEffect(() => {
     if (user) {
-      // setTimeout(getUserInfo, 1000);
+      setTimeout(getUserInfo, 1000);
       getUserInfo();
     }
   }, [user]);
