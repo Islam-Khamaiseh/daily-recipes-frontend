@@ -6,6 +6,7 @@ import Comments from "../../components/Comments/Comments";
 import StarRating from "../../components/StarRating/StarRating";
 import bookmark_off from "../../assets/icon/bookmark_off.svg";
 import bookmark_on from "../../assets/icon/bookmark_on.svg";
+import Copy_link from "../../assets/icon/Copy_link.svg";
 import MiniRecipeCard from "../../components/MiniRecipeCard/MiniRecipeCard";
 import "./Recipe.css";
 
@@ -294,6 +295,11 @@ const Recipe = () => {
               <div className="recipe-page-recipe-right-card-icons-social-media">
                 {/* Copy Link Button */}
                 <button className="copy-link-button" onClick={handleCopyLink}>
+                  <img
+                    className="copy-link-button-icon"
+                    src={Copy_link}
+                    alt="Copy_link"
+                  />
                   Copy Link
                 </button>
                 <p

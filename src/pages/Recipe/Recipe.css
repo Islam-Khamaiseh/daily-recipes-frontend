@@ -347,6 +347,10 @@
   border-radius: 40px;
 }
 
+.copy-link-button-icon {
+  margin-right: 9px;
+}
+
 .copy-link-button:hover {
   background-color: #228b39;
 }
