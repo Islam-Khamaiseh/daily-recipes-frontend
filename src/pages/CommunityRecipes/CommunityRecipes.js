@@ -11,7 +11,9 @@ const CommunityRecipes = () => {
 
   const fetchRecipeIDs = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/recipesIds");
+      const response = await axios.get(
+        `${process.env.REACT_APP_BACKEND_URL}/api/recipesIds`
+      );
       setIDs(response.data.ids);
     } catch (error) {
       console.error("Error fetching recipe IDs:", error);
@@ -25,9 +27,12 @@ const CommunityRecipes = () => {
     }
 
     try {
-      const response = await axios.get("http://localhost:5000/api/search", {
-        params: { ingredients: searchQuery },
-      });
+      const response = await axios.get(
+        `${process.env.REACT_APP_BACKEND_URL}/api/search`,
+        {
+          params: { ingredients: searchQuery },
+        }
+      );
 
       setIDs(response.data.recipeIds);
       setCurrentPage(1);
