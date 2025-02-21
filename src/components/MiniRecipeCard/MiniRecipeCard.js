@@ -11,6 +11,15 @@ function MiniRecipeCard({ recipeId }) {
   const [recipeList, setRecipeList] = useState(null);
   const navigate = useNavigate();
   const [isSaved, setIsSaved] = useState(false);
+  const [currentUser, setCurrentUser] = useState(null);
+
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      setCurrentUser(user);
+    });
+
+    return () => unsubscribe();
+  }, []);
 
   const getRecipe = async (recipeId) => {
     try {
@@ -60,33 +69,45 @@ function MiniRecipeCard({ recipeId }) {
     }
   };
 
-  // const checkIfSaved = async (recipeId) => {
-  //   try {
-  //     const token = await auth.currentUser.getIdToken();
+  const checkIfSaved = async (recipeId) => {
+    try {
+      if (!currentUser) {
+        // console.error("User not logged in");
+        return;
+      }
 
-  //     const response = await axios.get(
-  //       `${process.env.REACT_APP_BACKEND_URL}/api/checkIfSaved`,
-  //       {
-  //         params: { recipeId },
-  //         headers: {
-  //           Authorization: `Bearer ${token}`,
-  //         },
-  //       }
-  //     );
+      const token = await currentUser.getIdToken();
 
-  //     const { isSaved } = response.data;
-  //
-  //     setIsSaved(isSaved);
-  //   } catch (error) {
-  //     console.error(
-  //       "Error checking if recipe is saved:",
-  //       error.response?.data || error.message
-  //     );
-  //   }
-  // };
+      const response = await axios.get(
+        `${process.env.REACT_APP_BACKEND_URL}/api/checkIfSaved`,
+        {
+          params: { recipeId },
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+
+      const { isSaved } = response.data;
+
+      setIsSaved(isSaved);
+    } catch (error) {
+      console.error(
+        "Error checking if recipe is saved:",
+        error.response?.data || error.message
+      );
+    }
+  };
+
+  useEffect(() => {
+    if (currentUser) {
+      checkIfSaved(recipeId);
+    }
+  }, [currentUser]);
 
   useEffect(() => {
     getRecipe(recipeId);
+    // checkIfSaved(recipeId);
   }, [recipeId]);
 
   if (!recipeList) {
