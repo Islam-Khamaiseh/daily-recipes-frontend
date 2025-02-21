@@ -123,6 +123,20 @@
       font-weight: 700;
       line-height: 115%;
     }
+
+    .recipe-page-recipe-left-card-data-owner {
+      color: #51ba85;
+      text-align: center;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 115%;
+      cursor: pointer;
+    }
+
+    .recipe-page-recipe-left-card-data-owner:hover {
+      text-decoration: underline;
+    }
   }
 
   .recipe-page-recipe-left-card-creator {

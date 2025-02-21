@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import axios from "axios";
 import { auth } from "../../config/firebase";
-import saveOff from "../../assets/images/save-off.svg";
+import save_icon from "../../assets/icon/save.svg";
+import user_icon from "../../assets/icon/user.svg";
+import logout_icon from "../../assets/icon/Logout.svg";
 import { signOut } from "firebase/auth";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./Account.css";
@@ -72,7 +74,7 @@ function Account() {
                   location.pathname.includes("/account/history") ? "active" : ""
                 }
               >
-                <img src={saveOff} alt="save icon" /> Recipe History
+                <img src={user_icon} alt="user_icon" /> Recipe History
               </button>
 
               <button
@@ -83,7 +85,7 @@ function Account() {
                     : ""
                 }
               >
-                <img src={saveOff} alt="save icon" /> Saved Recipes
+                <img src={save_icon} alt="save_icon" /> Saved Recipes
               </button>
 
               <button
@@ -94,11 +96,11 @@ function Account() {
                     : ""
                 }
               >
-                <img src={saveOff} alt="save icon" /> Account Details
+                <img src={user_icon} alt="user_icon" /> Account Details
               </button>
 
               <button onClick={logout} className="logout">
-                <img src={saveOff} alt="save icon" /> Logout
+                <img src={logout_icon} alt="logout_icon" /> Logout
               </button>
             </div>
           </div>

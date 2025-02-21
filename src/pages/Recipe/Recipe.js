@@ -8,6 +8,7 @@ import bookmark_off from "../../assets/icon/bookmark_off.svg";
 import bookmark_on from "../../assets/icon/bookmark_on.svg";
 import Copy_link from "../../assets/icon/Copy_link.svg";
 import MiniRecipeCard from "../../components/MiniRecipeCard/MiniRecipeCard";
+import { useNavigate } from "react-router-dom";
 import "./Recipe.css";
 
 const Recipe = () => {
@@ -20,6 +21,7 @@ const Recipe = () => {
   const [showCopyMessage, setShowCopyMessage] = useState(false);
   const [language, setLanguage] = useState("en");
   const [currentUser, setCurrentUser] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
@@ -249,7 +251,10 @@ const Recipe = () => {
             <div className="recipe-page-recipe-left-card-line"></div>
             <div className="recipe-page-recipe-left-card-creator">
               <p className="recipe-page-recipe-left-card-label">Creator</p>
-              <p className="recipe-page-recipe-left-card-data">
+              <p
+                className="recipe-page-recipe-left-card-data-owner"
+                onClick={() => navigate(`/user/${recipe.owner}`)}
+              >
                 {recipe.ownerName}
               </p>
             </div>
