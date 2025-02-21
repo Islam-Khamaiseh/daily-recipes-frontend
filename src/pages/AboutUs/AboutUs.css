@@ -1,0 +1,119 @@
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+  /* background-color: antiquewhite; */
+  width: 90%;
+  justify-self: center;
+  margin-top: 50px;
+}
+
+.aboutUs-1 {
+  display: flex;
+  flex-direction: row;
+  /* margin: 20px; */
+  /* background-color: aqua; */
+}
+
+.aboutUs-1-1 {
+  position: relative;
+  display: flex;
+  width: 35%;
+  justify-content: center;
+  height: 600px;
+  /* margin: 20px 0px; */
+  /* background-color: #51ba85; */
+}
+
+.aboutUs-1-1-img {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.aboutUs-1-2 {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  /* margin: 20px 0px; */
+  /* background-color: antiquewhite; */
+  height: 600px;
+  justify-content: space-between;
+  padding: 0px;
+}
+
+.aboutUs-1-2-1 {
+  /* background-color: red; */
+  width: 80%;
+  /* margin: 20px; */
+  padding: 0px 50px;
+  margin-top: 20px;
+}
+
+.aboutUs-1-2-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  /* margin: 20px; */
+  /* margin-top: 50px; */
+  padding: 0px 50px;
+  /* background-color: red; */
+}
+
+.aboutUs-1-2-2-1,
+.aboutUs-1-2-2-2 {
+  /* width: 300px; */
+  width: 45%;
+  /* background-color: aquamarine; */
+  border-radius: 20px;
+  background: #51ba85;
+  padding: 20px 30px 0px 30px;
+}
+
+.aboutUs-2 {
+  margin: 150px 0px;
+  /* padding: 0px 70px; */
+  /* background-color: antiquewhite; */
+}
+
+.aboutUs-2-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.aboutUs-2-1-1 {
+  width: 20%;
+  border-radius: 20px;
+  border: 1px solid #51ba85;
+  background: rgba(81, 186, 133, 0.1);
+  padding: 20px 30px 0px 30px;
+}
+
+.aboutUs-2-h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.aboutUs-2-1-h2 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.aboutUs-2-1-p {
+  text-align: center;
+  color: #6b7280;
+}
+
+.aboutUs-1-2-2-h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.aboutUs-1-2-2-p {
+  text-align: center;
+  color: #fff;
+}
