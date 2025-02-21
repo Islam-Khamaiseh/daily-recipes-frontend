@@ -11,9 +11,7 @@ const CommunityRecipes = () => {
 
   const fetchRecipeIDs = async () => {
     try {
-      const response = await axios.get(
-        `${process.env.REACT_APP_BACKEND_URL}/api/recipesIds`
-      );
+      const response = await axios.get("http://localhost:5000/api/recipesIds");
       setIDs(response.data.ids);
     } catch (error) {
       console.error("Error fetching recipe IDs:", error);
@@ -27,12 +25,9 @@ const CommunityRecipes = () => {
     }
 
     try {
-      const response = await axios.get(
-        `${process.env.REACT_APP_BACKEND_URL}/api/search`,
-        {
-          params: { ingredients: searchQuery },
-        }
-      );
+      const response = await axios.get("http://localhost:5000/api/search", {
+        params: { ingredients: searchQuery },
+      });
 
       setIDs(response.data.recipeIds);
       setCurrentPage(1);
@@ -58,19 +53,24 @@ const CommunityRecipes = () => {
         <div className="community-page-filters">
           <div className="community-page-filters-box">
             {/* Search Bar */}
-            <input
-              className="community-page-filters-box-input"
-              type="text"
-              placeholder="Enter ingredients (rice, chicken, ...)"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-            />
-            <button
-              className="community-page-filters-box-button"
-              onClick={handleSearch}
-            >
-              Search
-            </button>
+            <h1 className="community-page-filters-box-h1">
+              Find your favorite recipe
+            </h1>
+            <div className="community-page-filters-box-search">
+              <input
+                className="community-page-filters-box-input"
+                type="text"
+                placeholder="Enter ingredients (rice, chicken, ...)"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+              />
+              <button
+                className="community-page-filters-box-button"
+                onClick={handleSearch}
+              >
+                Search
+              </button>
+            </div>
           </div>
         </div>
 
