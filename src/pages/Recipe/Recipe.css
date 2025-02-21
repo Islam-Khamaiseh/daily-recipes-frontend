@@ -322,7 +322,7 @@
   top: 50%;
   width: 8px;
   height: 8px;
-  background-color: #2ea44f;
+  background-color: #51ba85;
   border-radius: 50%;
   transform: translateY(-50%);
 }
@@ -343,7 +343,7 @@
 
 .step-number {
   font-weight: bold;
-  color: #2ea44f;
+  color: #51ba85;
   margin-right: 8px;
   font-size: 18px;
   padding: 0px 7px;
@@ -355,7 +355,7 @@
   margin-right: 10px;
   font-size: 17px;
   border: none;
-  background-color: #28a745;
+  background-color: #51ba85;
   color: #fff;
   cursor: pointer;
   border-radius: 40px;
@@ -366,11 +366,11 @@
 }
 
 .copy-link-button:hover {
-  background-color: #228b39;
+  background-color: #329462;
 }
 
 .copy-message {
-  color: #2ea44f;
+  color: #51ba85;
   font-size: 14px;
   font-weight: bold;
   opacity: 0;
@@ -399,14 +399,14 @@
   font-size: 17px;
   border: none;
   background-color: #fff;
-  border: 2px solid #28a745;
+  border: 2px solid #51ba85;
   color: #000;
   cursor: pointer;
   border-radius: 40px;
 }
 
 .recipe-page-recipe-right-card-icons-save-language:hover {
-  background-color: #28a745;
+  background-color: #329462;
   color: #fff;
 }
 

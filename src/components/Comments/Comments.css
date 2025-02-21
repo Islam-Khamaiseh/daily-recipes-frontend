@@ -45,7 +45,7 @@
 }
 
 .comment-button:hover {
-  background: #218838;
+  background: #329462;
 }
 
 .comments-content {
@@ -71,7 +71,7 @@
 }
 
 .comments-content-avatar:hover {
-  border-color: #2ea44f;
+  border-color: #329462;
 }
 
 .comments-details {
@@ -88,7 +88,7 @@
 }
 
 .comments-content-user-name:hover {
-  color: #2ea44f;
+  color: #329462;
 }
 
 .comments-content-text {

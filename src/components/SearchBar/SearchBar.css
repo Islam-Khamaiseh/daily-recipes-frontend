@@ -134,14 +134,14 @@
   margin-right: 10px;
   font-size: 15px;
   border: none;
-  background-color: #28a745;
+  background-color: #51ba85;
   color: #fff;
   cursor: pointer;
   border-radius: 40px;
 }
 
 .generate-btn:hover {
-  background-color: #218838;
+  background-color: #329462;
 }
 
 .recipe-input-description {
@@ -156,11 +156,11 @@
     margin: 0px;
   }
   .recipe-input-description-h1-line2 {
-    color: #28a745;
+    color: #51ba85;
     margin-bottom: 1rem;
   }
   .recipe-input-description-p-line2 {
-    color: #28a745;
+    color: #51ba85;
   }
 }
 
@@ -218,7 +218,7 @@
     margin-right: 5px;
     font-size: 10px;
     border: none;
-    background-color: #28a745;
+    background-color: #51ba85;
     color: #fff;
     cursor: pointer;
     border-radius: 40px;
