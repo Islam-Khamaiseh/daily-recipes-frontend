@@ -13,7 +13,7 @@
 .how-it-works-h1 {
   color: #18181b;
   text-align: center;
-  /* font-family: Poppins; */
+
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -22,7 +22,7 @@
 
 .how-it-works-h2 {
   color: #18181b;
-  /* font-family: Poppins; */
+
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -32,7 +32,7 @@
 
 .how-it-works-p {
   color: #18181b;
-  /* font-family: Poppins; */
+
   font-size: 16px;
   font-style: normal;
   font-weight: 400;

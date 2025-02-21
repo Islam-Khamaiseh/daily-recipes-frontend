@@ -15,7 +15,7 @@
     justify-self: center;
     margin-top: 80px;
     color: #fff;
-    font-family: Poppins;
+
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
@@ -198,7 +198,7 @@
     }
     .recipe-page-recipe-right-card-ingredients-list {
       color: #18181b;
-      /* font-family: Inter; */
+
       font-size: 16px;
       font-style: normal;
       font-weight: 400;

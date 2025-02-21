@@ -14,7 +14,7 @@
   h1 {
     color: #121212;
     text-align: center;
-    font-family: "Noto Serif";
+
     font-size: 48px;
     font-style: normal;
     font-weight: 500;
@@ -25,7 +25,7 @@
   p {
     color: #3d3d3d;
     text-align: center;
-    font-family: Satoshi;
+
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -44,7 +44,7 @@
   label {
     color: #121212;
     text-align: center;
-    font-family: Satoshi;
+
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -79,7 +79,7 @@
     background-color: #121212;
     color: #fff;
     margin: 20px 0px;
-    font-family: Satoshi;
+
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -90,7 +90,7 @@
 .forgot-password {
   color: #3d3d3d;
   text-align: center;
-  font-family: Satoshi;
+
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -101,7 +101,7 @@
 
 .text-under-form {
   color: #3e3e3e;
-  font-family: Satoshi;
+
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -109,7 +109,7 @@
 
   span {
     color: #121212;
-    font-family: Satoshi;
+
     font-size: 16px;
     font-style: normal;
     font-weight: 550;
@@ -127,7 +127,6 @@
   color: #121212;
   font-weight: 500;
   border: 1px solid #ededed;
-  font-family: Satoshi;
   font-size: 16px;
   font-style: normal;
   line-height: 24px;
