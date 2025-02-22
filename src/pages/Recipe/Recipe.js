@@ -273,13 +273,7 @@ const Recipe = () => {
               </p>
             </div>
             <div className="recipe-page-recipe-left-card-line"></div>
-            <div className="recipe-page-recipe-left-card-bookmarks">
-              <p className="recipe-page-recipe-left-card-label">Bookmarks</p>
-              <p className="recipe-page-recipe-left-card-data">
-                {recipe.savedCounter}
-              </p>
-            </div>
-            <div className="recipe-page-recipe-left-card-line"></div>
+
             <div className="recipe-page-recipe-left-card-rating">
               <StarRating recipeId={id} />
             </div>

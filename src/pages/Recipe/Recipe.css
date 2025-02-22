@@ -76,6 +76,10 @@
     /* margin: 20px 0px; */
   }
 
+  .recipe-page-recipe-left-card-button:hover {
+    background-color: #329462;
+  }
+
   .recipe-page-recipe-left-card-title {
     color: #18181b;
     text-align: center;

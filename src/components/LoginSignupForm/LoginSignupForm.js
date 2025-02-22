@@ -111,10 +111,10 @@ function LoginSignupForm() {
           {isSignUp ? (
             // SignUp
             <div className="login-form-signUp">
-              <label for="userName">User Name</label>
+              <label for="userName">Name</label>
               <input
                 type="text"
-                placeholder="Username"
+                placeholder="Name"
                 id="userName"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}

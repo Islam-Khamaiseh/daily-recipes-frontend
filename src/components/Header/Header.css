@@ -123,6 +123,7 @@ header {
     }
     button:hover {
       background-color: #51ba85;
+      color: #fff;
     }
   }
 }

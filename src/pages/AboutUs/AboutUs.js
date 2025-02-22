@@ -18,10 +18,17 @@ function AboutUs() {
             <h1 className="aboutUs-1-2-1-h1">Who We Are</h1>
             <p className="aboutUs-1-2-1-p">
               Welcome to Daily Recipes, your go-to platform for discovering and
-              sharing delicious recipes. We are a team of passionate food
-              enthusiasts committed to simplifying the cooking process and
-              inspiring everyone—beginners and experts alike—to explore new
-              culinary horizons.
+              sharing delicious recipes. Whether you're a beginner or an
+              experienced cook, our mission is to make cooking easy, enjoyable,
+              and accessible to everyone. At Daily Recipes, we believe that food
+              is more than just nourishment—it’s a way to connect, create, and
+              explore. Our platform is designed to inspire you with a variety of
+              recipes, from quick everyday meals to exciting new dishes. With
+              personalized recommendations and easy-to-follow instructions, we
+              make cooking a fun and effortless experience. Join our growing
+              community of food lovers, save your favorite recipes, and embark
+              on a journey of flavors. Let’s cook, create, and enjoy great food
+              together!
             </p>
           </div>
           <div className="aboutUs-1-2-2">

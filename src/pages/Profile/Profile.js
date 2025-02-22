@@ -114,7 +114,7 @@ const Profile = () => {
 
       <h3>Personal Information</h3>
       <div className="profile-inputs">
-        <label>User Name</label>
+        <label>Name</label>
         <input
           type="text"
           value={newUserName}
