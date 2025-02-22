@@ -21,14 +21,16 @@ const SearchBar = ({ onSearchResults }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [filtersCount, setFiltersCount] = useState(0);
 
-  const additionalIngredientsOptions = [
-    "with additional ingredients",
-    "without additional  ingredients",
-  ];
+  // const additionalIngredientsOptions = [
+  //   "with additional ingredients",
+  //   "without additional  ingredients",
+  // ];
 
   const cookingTimeOptions = [
-    "under 15 minutes",
-    "15-30 minutes",
+    "under 5 minutes",
+    "5-10 minutes",
+    "10-20 minutes",
+    "20-30 minutes",
     "30-60 minutes",
     "above 60 minutes",
   ];
@@ -132,9 +134,9 @@ const SearchBar = ({ onSearchResults }) => {
     }
   };
 
-  const handleToggleAdditionalIngredients = (additional) => {
-    setAdditionalIngredients(additional);
-  };
+  // const handleToggleAdditionalIngredients = (additional) => {
+  //   setAdditionalIngredients(additional);
+  // };
 
   const handleToggleRegion = (region1) => {
     if (region1 === region) {
@@ -249,7 +251,7 @@ const SearchBar = ({ onSearchResults }) => {
           {showFilters && (
             <div className="filter-dropdown" ref={dropdownRef}>
               <div className="filter-dropdown-1">
-                <div className="filter-dropdown-1-1">
+                {/* <div className="filter-dropdown-1-1">
                   <p>Ingredients</p>
                   {additionalIngredientsOptions.map((additional, index) => (
                     <button
@@ -266,7 +268,7 @@ const SearchBar = ({ onSearchResults }) => {
                       {additional}
                     </button>
                   ))}
-                </div>
+                </div> */}
                 <div className="filter-dropdown-1-2">
                   <p>Cooking Time</p>
                   {cookingTimeOptions.map((time, index) => (
